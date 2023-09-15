@@ -122,7 +122,15 @@ hr {
 
 }
 
+.npp_header_container {
+  height: 200px;
+  background-color: white;
+  background-image: url('../supply/nuclearfuel.jpg');
+  background-repeat:no-repeat;
+  background-position: 50% 50%;
+  background-size:cover;
 
+}
 .heat_top_container{background-color: black;
   background-image: url('../supply/furnace-23.jpg');
   background-repeat: no-repeat;
