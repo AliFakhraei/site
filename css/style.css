@@ -123,7 +123,7 @@ hr {
 }
 
 .npp_header_container {
-  height: 200px;
+  height: 100px;
   background-color: white;
   background-image: url('../supply/nuclearfuel.jpg');
   background-repeat:no-repeat;
@@ -169,8 +169,9 @@ hr {
 .persian_text_description {
   font-family: 'Times New Roman', Times, serif;
    font-size: 18;
-   text-align: right;
+   text-align: justify;
    text-justify:inter-cluster;
+   direction: rtl;
 }
 
 .text_borders{margin: 20px;}
