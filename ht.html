@@ -13,14 +13,29 @@
   </div>
 
   <script>
+    // Retrieve the selected color from localStorage when the page loads
+    document.addEventListener("DOMContentLoaded", function() {
+      var selectedColor = localStorage.getItem("selectedColor");
+      if (selectedColor) {
+        var stylesheet = document.getElementById("stylesheet");
+        stylesheet.href = selectedColor;
+      }
+    });
+
     function changeColor() {
       var stylesheet = document.getElementById("stylesheet");
       stylesheet.href = "styles-green.css";
+
+      // Store the selected color in localStorage
+      localStorage.setItem("selectedColor", "styles-green.css");
     }
 
     function resetColor() {
       var stylesheet = document.getElementById("stylesheet");
       stylesheet.href = "styles.css";
+
+      // Remove the stored selected color from localStorage
+      localStorage.removeItem("selectedColor");
     }
   </script>
 </body>
