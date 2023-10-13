@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Changing Card</title>
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Color Changing Card</h1>
+    <p>This is a card that changes color.</p>
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="resetColor()">Reset Color</button>
+  </div>
+
+  <script>
+    function changeColor() {
+      var stylesheet = document.getElementById("stylesheet");
+      stylesheet.href = "styles-green.css";
+    }
+
+    function resetColor() {
+      var stylesheet = document.getElementById("stylesheet");
+      stylesheet.href = "styles.css";
+    }
+  </script>
+</body>
+</html>
